@@ -1,0 +1,88 @@
+2023-04-26 20:09:09 ===> --------------------------------------This is all argsurations----------------------------------
+2023-04-26 20:09:09 ===> user=Dylon
+2023-04-26 20:09:09 ===> experiment=NP
+2023-04-26 20:09:09 ===> date=2023-04-26-20:09:09
+2023-04-26 20:09:09 ===> description=non-iid
+2023-04-26 20:09:09 ===> root=path to training set
+2023-04-26 20:09:09 ===> dataset=tinyimagenet
+2023-04-26 20:09:09 ===> data_dist=noniid
+2023-04-26 20:09:09 ===> num_workers=4
+2023-04-26 20:09:09 ===> lr=0.01
+2023-04-26 20:09:09 ===> K=10
+2023-04-26 20:09:09 ===> wd=1e-05
+2023-04-26 20:09:09 ===> mu=0.01
+2023-04-26 20:09:09 ===> epochs=50
+2023-04-26 20:09:09 ===> local_epochs=10
+2023-04-26 20:09:09 ===> seed=0
+2023-04-26 20:09:09 ===> batch_size=128
+2023-04-26 20:09:09 ===> save_freq=50
+2023-04-26 20:09:09 ===> beta=0.5
+2023-04-26 20:09:09 ===> ----------------------------------------This is a halvingline----------------------------------
+2023-04-26 20:09:09 ===> non-iid
+2023-04-26 20:11:05 ===> Loaded backend module://matplotlib_inline.backend_inline version unknown.
+2023-04-26 20:11:05 ===> findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0.
+2023-04-26 20:11:05 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerif-Bold.ttf', name='DejaVu Serif', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2023-04-26 20:11:05 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansDisplay.ttf', name='DejaVu Sans Display', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2023-04-26 20:11:05 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/cmmi10.ttf', name='cmmi10', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2023-04-26 20:11:05 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/cmb10.ttf', name='cmb10', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2023-04-26 20:11:05 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansMono-Oblique.ttf', name='DejaVu Sans Mono', style='oblique', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2023-04-26 20:11:05 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansMono-BoldOblique.ttf', name='DejaVu Sans Mono', style='oblique', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
+2023-04-26 20:11:05 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansMono.ttf', name='DejaVu Sans Mono', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2023-04-26 20:11:05 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/STIXSizTwoSymBol.ttf', name='STIXSizeTwoSym', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2023-04-26 20:11:05 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/cmr10.ttf', name='cmr10', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2023-04-26 20:11:05 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/STIXNonUniBol.ttf', name='STIXNonUnicode', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2023-04-26 20:11:05 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/STIXSizFourSymBol.ttf', name='STIXSizeFourSym', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2023-04-26 20:11:05 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Oblique.ttf', name='DejaVu Sans', style='oblique', variant='normal', weight=400, stretch='normal', size='scalable')) = 1.05
+2023-04-26 20:11:05 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/STIXSizFiveSymReg.ttf', name='STIXSizeFiveSym', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2023-04-26 20:11:05 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/STIXSizOneSymBol.ttf', name='STIXSizeOneSym', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2023-04-26 20:11:05 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/STIXNonUniIta.ttf', name='STIXNonUnicode', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2023-04-26 20:11:05 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/STIXGeneralBol.ttf', name='STIXGeneral', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2023-04-26 20:11:05 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/STIXGeneralBolIta.ttf', name='STIXGeneral', style='italic', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
+2023-04-26 20:11:05 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/cmss10.ttf', name='cmss10', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2023-04-26 20:11:05 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/STIXSizFourSymReg.ttf', name='STIXSizeFourSym', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2023-04-26 20:11:05 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerif-Italic.ttf', name='DejaVu Serif', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2023-04-26 20:11:05 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/STIXNonUniBolIta.ttf', name='STIXNonUnicode', style='italic', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
+2023-04-26 20:11:05 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/STIXSizThreeSymBol.ttf', name='STIXSizeThreeSym', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2023-04-26 20:11:05 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/cmsy10.ttf', name='cmsy10', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2023-04-26 20:11:05 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerifDisplay.ttf', name='DejaVu Serif Display', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2023-04-26 20:11:05 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerif.ttf', name='DejaVu Serif', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2023-04-26 20:11:05 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/STIXSizOneSymReg.ttf', name='STIXSizeOneSym', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2023-04-26 20:11:05 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/STIXGeneral.ttf', name='STIXGeneral', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2023-04-26 20:11:05 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/cmex10.ttf', name='cmex10', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2023-04-26 20:11:05 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/cmtt10.ttf', name='cmtt10', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2023-04-26 20:11:05 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/STIXGeneralItalic.ttf', name='STIXGeneral', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2023-04-26 20:11:05 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf', name='DejaVu Sans', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 0.05
+2023-04-26 20:11:05 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-BoldOblique.ttf', name='DejaVu Sans', style='oblique', variant='normal', weight=700, stretch='normal', size='scalable')) = 1.335
+2023-04-26 20:11:05 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansMono-Bold.ttf', name='DejaVu Sans Mono', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2023-04-26 20:11:05 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/STIXSizTwoSymReg.ttf', name='STIXSizeTwoSym', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2023-04-26 20:11:05 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/STIXSizThreeSymReg.ttf', name='STIXSizeThreeSym', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2023-04-26 20:11:05 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf', name='DejaVu Sans', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 0.33499999999999996
+2023-04-26 20:11:05 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerif-BoldItalic.ttf', name='DejaVu Serif', style='italic', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
+2023-04-26 20:11:05 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/STIXNonUni.ttf', name='STIXNonUnicode', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2023-04-26 20:11:05 ===> findfont: score(FontEntry(fname='/usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf', name='DejaVu Sans Mono', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2023-04-26 20:11:05 ===> findfont: score(FontEntry(fname='/usr/share/fonts/truetype/dejavu/DejaVuSerif-Bold.ttf', name='DejaVu Serif', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2023-04-26 20:11:05 ===> findfont: score(FontEntry(fname='/usr/share/fonts/truetype/dejavu/DejaVuSansMono-Bold.ttf', name='DejaVu Sans Mono', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2023-04-26 20:11:05 ===> findfont: score(FontEntry(fname='/usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf', name='DejaVu Serif', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2023-04-26 20:11:05 ===> findfont: score(FontEntry(fname='/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf', name='DejaVu Sans', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 0.05
+2023-04-26 20:11:05 ===> findfont: score(FontEntry(fname='/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf', name='DejaVu Sans', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 0.33499999999999996
+2023-04-26 20:11:05 ===> findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf') with score of 0.050000.
+2023-04-26 20:11:06 ===> Samples for train of 0= 10192
+2023-04-26 20:11:06 ===> Samples for train of 1= 10046
+2023-04-26 20:11:06 ===> Samples for train of 2= 9964
+2023-04-26 20:11:06 ===> Samples for train of 3= 9967
+2023-04-26 20:11:06 ===> Samples for train of 4= 9966
+2023-04-26 20:11:06 ===> Samples for train of 5= 9968
+2023-04-26 20:11:06 ===> Samples for train of 6= 9976
+2023-04-26 20:11:06 ===> Samples for train of 7= 9965
+2023-04-26 20:11:06 ===> Samples for train of 8= 9970
+2023-04-26 20:11:06 ===> Samples for train of 9= 9986
+2023-04-26 20:13:29 ===> Epoch: 0 eval_loss: 5.3925 eval_top1: 9.2500 eval_top5: 23.2300
+2023-04-26 20:13:29 ===> Current epoch time consumption: 2.37 minutes!
+2023-04-26 20:15:45 ===> Current epoch time consumption: 2.25 minutes!
+2023-04-26 20:17:58 ===> Current epoch time consumption: 2.22 minutes!
+2023-04-26 20:20:11 ===> Current epoch time consumption: 2.22 minutes!
+2023-04-26 20:22:25 ===> Current epoch time consumption: 2.22 minutes!
+2023-04-26 20:24:38 ===> Current epoch time consumption: 2.23 minutes!
+2023-04-26 20:26:52 ===> Current epoch time consumption: 2.22 minutes!
+2023-04-26 20:29:05 ===> Current epoch time consumption: 2.22 minutes!
+2023-04-26 20:31:18 ===> Current epoch time consumption: 2.22 minutes!

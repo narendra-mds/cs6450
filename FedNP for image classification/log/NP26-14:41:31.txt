@@ -1,0 +1,177 @@
+2023-04-26 14:41:31 ===> --------------------------------------This is all argsurations----------------------------------
+2023-04-26 14:41:31 ===> user=Dylon
+2023-04-26 14:41:31 ===> experiment=NP
+2023-04-26 14:41:31 ===> date=2023-04-26-14:41:31
+2023-04-26 14:41:31 ===> description=non-iid
+2023-04-26 14:41:31 ===> root=path to training set
+2023-04-26 14:41:31 ===> dataset=cifar100
+2023-04-26 14:41:31 ===> data_dist=noniid
+2023-04-26 14:41:31 ===> num_workers=4
+2023-04-26 14:41:31 ===> lr=0.01
+2023-04-26 14:41:31 ===> K=10
+2023-04-26 14:41:31 ===> wd=1e-05
+2023-04-26 14:41:31 ===> mu=0.01
+2023-04-26 14:41:31 ===> epochs=100
+2023-04-26 14:41:31 ===> local_epochs=10
+2023-04-26 14:41:31 ===> seed=0
+2023-04-26 14:41:31 ===> batch_size=128
+2023-04-26 14:41:31 ===> save_freq=50
+2023-04-26 14:41:31 ===> beta=0.5
+2023-04-26 14:41:31 ===> ----------------------------------------This is a halvingline----------------------------------
+2023-04-26 14:41:31 ===> non-iid
+2023-04-26 14:41:33 ===> Loaded backend module://matplotlib_inline.backend_inline version unknown.
+2023-04-26 14:41:33 ===> findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0.
+2023-04-26 14:41:33 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/cmmi10.ttf', name='cmmi10', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2023-04-26 14:41:33 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/STIXSizFiveSymReg.ttf', name='STIXSizeFiveSym', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2023-04-26 14:41:33 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/STIXNonUniBol.ttf', name='STIXNonUnicode', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2023-04-26 14:41:33 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/cmsy10.ttf', name='cmsy10', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2023-04-26 14:41:33 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerif-Italic.ttf', name='DejaVu Serif', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2023-04-26 14:41:33 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/STIXSizOneSymReg.ttf', name='STIXSizeOneSym', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2023-04-26 14:41:33 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/cmss10.ttf', name='cmss10', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2023-04-26 14:41:33 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/STIXSizTwoSymReg.ttf', name='STIXSizeTwoSym', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2023-04-26 14:41:33 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansMono-BoldOblique.ttf', name='DejaVu Sans Mono', style='oblique', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
+2023-04-26 14:41:33 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Oblique.ttf', name='DejaVu Sans', style='oblique', variant='normal', weight=400, stretch='normal', size='scalable')) = 1.05
+2023-04-26 14:41:33 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerifDisplay.ttf', name='DejaVu Serif Display', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2023-04-26 14:41:33 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/STIXGeneralBol.ttf', name='STIXGeneral', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2023-04-26 14:41:33 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf', name='DejaVu Sans', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 0.33499999999999996
+2023-04-26 14:41:33 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/STIXGeneralBolIta.ttf', name='STIXGeneral', style='italic', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
+2023-04-26 14:41:33 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerif.ttf', name='DejaVu Serif', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2023-04-26 14:41:33 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/cmr10.ttf', name='cmr10', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2023-04-26 14:41:33 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/STIXSizFourSymReg.ttf', name='STIXSizeFourSym', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2023-04-26 14:41:33 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansMono.ttf', name='DejaVu Sans Mono', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2023-04-26 14:41:33 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansMono-Oblique.ttf', name='DejaVu Sans Mono', style='oblique', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2023-04-26 14:41:33 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/STIXNonUni.ttf', name='STIXNonUnicode', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2023-04-26 14:41:33 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansMono-Bold.ttf', name='DejaVu Sans Mono', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2023-04-26 14:41:33 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansDisplay.ttf', name='DejaVu Sans Display', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2023-04-26 14:41:33 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/STIXNonUniIta.ttf', name='STIXNonUnicode', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2023-04-26 14:41:33 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerif-BoldItalic.ttf', name='DejaVu Serif', style='italic', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
+2023-04-26 14:41:33 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/cmex10.ttf', name='cmex10', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2023-04-26 14:41:33 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/STIXGeneral.ttf', name='STIXGeneral', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2023-04-26 14:41:33 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/STIXNonUniBolIta.ttf', name='STIXNonUnicode', style='italic', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
+2023-04-26 14:41:33 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/STIXSizThreeSymBol.ttf', name='STIXSizeThreeSym', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2023-04-26 14:41:33 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerif-Bold.ttf', name='DejaVu Serif', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2023-04-26 14:41:33 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/cmtt10.ttf', name='cmtt10', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2023-04-26 14:41:33 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/STIXGeneralItalic.ttf', name='STIXGeneral', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2023-04-26 14:41:33 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/STIXSizFourSymBol.ttf', name='STIXSizeFourSym', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2023-04-26 14:41:33 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/STIXSizThreeSymReg.ttf', name='STIXSizeThreeSym', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2023-04-26 14:41:33 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/STIXSizTwoSymBol.ttf', name='STIXSizeTwoSym', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2023-04-26 14:41:33 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/cmb10.ttf', name='cmb10', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2023-04-26 14:41:33 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/STIXSizOneSymBol.ttf', name='STIXSizeOneSym', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2023-04-26 14:41:33 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-BoldOblique.ttf', name='DejaVu Sans', style='oblique', variant='normal', weight=700, stretch='normal', size='scalable')) = 1.335
+2023-04-26 14:41:33 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf', name='DejaVu Sans', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 0.05
+2023-04-26 14:41:33 ===> findfont: score(FontEntry(fname='/usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf', name='DejaVu Serif', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2023-04-26 14:41:33 ===> findfont: score(FontEntry(fname='/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf', name='DejaVu Sans', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 0.05
+2023-04-26 14:41:33 ===> findfont: score(FontEntry(fname='/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf', name='DejaVu Sans', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 0.33499999999999996
+2023-04-26 14:41:33 ===> findfont: score(FontEntry(fname='/usr/share/fonts/truetype/dejavu/DejaVuSerif-Bold.ttf', name='DejaVu Serif', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2023-04-26 14:41:33 ===> findfont: score(FontEntry(fname='/usr/share/fonts/truetype/dejavu/DejaVuSansMono-Bold.ttf', name='DejaVu Sans Mono', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2023-04-26 14:41:33 ===> findfont: score(FontEntry(fname='/usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf', name='DejaVu Sans Mono', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2023-04-26 14:41:33 ===> findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf') with score of 0.050000.
+2023-04-26 14:41:34 ===> Samples for train of 0= 5034
+2023-04-26 14:41:34 ===> Samples for train of 1= 5025
+2023-04-26 14:41:34 ===> Samples for train of 2= 4969
+2023-04-26 14:41:34 ===> Samples for train of 3= 4942
+2023-04-26 14:41:34 ===> Samples for train of 4= 4965
+2023-04-26 14:41:34 ===> Samples for train of 5= 4969
+2023-04-26 14:41:34 ===> Samples for train of 6= 4989
+2023-04-26 14:41:34 ===> Samples for train of 7= 4995
+2023-04-26 14:41:34 ===> Samples for train of 8= 5025
+2023-04-26 14:41:34 ===> Samples for train of 9= 5087
+2023-04-26 14:42:05 ===> Epoch: 0 eval_loss: 4.8932 eval_top1: 12.9700 eval_top5: 30.4900
+2023-04-26 14:42:05 ===> Current epoch time consumption: 0.48 minutes!
+2023-04-26 14:42:29 ===> Current epoch time consumption: 0.41 minutes!
+2023-04-26 14:42:55 ===> Current epoch time consumption: 0.43 minutes!
+2023-04-26 14:43:20 ===> Current epoch time consumption: 0.42 minutes!
+2023-04-26 14:43:45 ===> Current epoch time consumption: 0.42 minutes!
+2023-04-26 14:44:10 ===> Current epoch time consumption: 0.41 minutes!
+2023-04-26 14:44:35 ===> Current epoch time consumption: 0.41 minutes!
+2023-04-26 14:45:00 ===> Current epoch time consumption: 0.42 minutes!
+2023-04-26 14:45:25 ===> Current epoch time consumption: 0.42 minutes!
+2023-04-26 14:45:50 ===> Current epoch time consumption: 0.41 minutes!
+2023-04-26 14:45:52 ===> Current epoch time consumption: 4.26 minutes!
+2023-04-26 14:45:52 ===> Estimated remaining training time: 7.03 hours!
+2023-04-26 14:46:18 ===> Epoch: 1 eval_loss: 4.5388 eval_top1: 16.1600 eval_top5: 36.9900
+2023-04-26 14:46:18 ===> Current epoch time consumption: 0.44 minutes!
+2023-04-26 14:46:43 ===> Current epoch time consumption: 0.41 minutes!
+2023-04-26 14:47:07 ===> Current epoch time consumption: 0.41 minutes!
+2023-04-26 14:47:32 ===> Current epoch time consumption: 0.41 minutes!
+2023-04-26 14:47:56 ===> Current epoch time consumption: 0.41 minutes!
+2023-04-26 14:48:21 ===> Current epoch time consumption: 0.41 minutes!
+2023-04-26 14:48:45 ===> Current epoch time consumption: 0.41 minutes!
+2023-04-26 14:49:10 ===> Current epoch time consumption: 0.42 minutes!
+2023-04-26 14:49:35 ===> Current epoch time consumption: 0.41 minutes!
+2023-04-26 14:50:00 ===> Current epoch time consumption: 0.42 minutes!
+2023-04-26 14:50:02 ===> Current epoch time consumption: 4.17 minutes!
+2023-04-26 14:50:02 ===> Estimated remaining training time: 6.81 hours!
+2023-04-26 14:50:28 ===> Epoch: 2 eval_loss: 4.0549 eval_top1: 20.4700 eval_top5: 43.6900
+2023-04-26 14:50:28 ===> Current epoch time consumption: 0.44 minutes!
+2023-04-26 14:50:53 ===> Current epoch time consumption: 0.42 minutes!
+2023-04-26 14:51:18 ===> Current epoch time consumption: 0.41 minutes!
+2023-04-26 14:51:42 ===> Current epoch time consumption: 0.41 minutes!
+2023-04-26 14:52:07 ===> Current epoch time consumption: 0.41 minutes!
+2023-04-26 14:52:31 ===> Current epoch time consumption: 0.41 minutes!
+2023-04-26 14:52:56 ===> Current epoch time consumption: 0.41 minutes!
+2023-04-26 14:53:21 ===> Current epoch time consumption: 0.42 minutes!
+2023-04-26 14:53:46 ===> Current epoch time consumption: 0.42 minutes!
+2023-04-26 14:54:11 ===> Current epoch time consumption: 0.42 minutes!
+2023-04-26 14:54:12 ===> Current epoch time consumption: 4.18 minutes!
+2023-04-26 14:54:12 ===> Estimated remaining training time: 6.75 hours!
+2023-04-26 14:54:39 ===> Epoch: 3 eval_loss: 3.8491 eval_top1: 22.8000 eval_top5: 47.9100
+2023-04-26 14:54:39 ===> Current epoch time consumption: 0.44 minutes!
+2023-04-26 14:55:04 ===> Current epoch time consumption: 0.41 minutes!
+2023-04-26 14:55:28 ===> Current epoch time consumption: 0.40 minutes!
+2023-04-26 14:55:52 ===> Current epoch time consumption: 0.41 minutes!
+2023-04-26 14:56:17 ===> Current epoch time consumption: 0.40 minutes!
+2023-04-26 14:56:41 ===> Current epoch time consumption: 0.41 minutes!
+2023-04-26 14:57:06 ===> Current epoch time consumption: 0.41 minutes!
+2023-04-26 14:57:31 ===> Current epoch time consumption: 0.41 minutes!
+2023-04-26 14:57:56 ===> Current epoch time consumption: 0.42 minutes!
+2023-04-26 14:58:21 ===> Current epoch time consumption: 0.42 minutes!
+2023-04-26 14:58:22 ===> Current epoch time consumption: 4.17 minutes!
+2023-04-26 14:58:22 ===> Estimated remaining training time: 6.67 hours!
+2023-04-26 14:58:49 ===> Epoch: 4 eval_loss: 3.7152 eval_top1: 24.5200 eval_top5: 50.2300
+2023-04-26 14:58:49 ===> Current epoch time consumption: 0.44 minutes!
+2023-04-26 14:59:14 ===> Current epoch time consumption: 0.41 minutes!
+2023-04-26 14:59:38 ===> Current epoch time consumption: 0.41 minutes!
+2023-04-26 15:00:03 ===> Current epoch time consumption: 0.41 minutes!
+2023-04-26 15:00:27 ===> Current epoch time consumption: 0.41 minutes!
+2023-04-26 15:00:51 ===> Current epoch time consumption: 0.40 minutes!
+2023-04-26 15:01:16 ===> Current epoch time consumption: 0.41 minutes!
+2023-04-26 15:01:41 ===> Current epoch time consumption: 0.42 minutes!
+2023-04-26 15:02:06 ===> Current epoch time consumption: 0.43 minutes!
+2023-04-26 15:02:31 ===> Current epoch time consumption: 0.42 minutes!
+2023-04-26 15:02:33 ===> Current epoch time consumption: 4.18 minutes!
+2023-04-26 15:02:33 ===> Estimated remaining training time: 6.61 hours!
+2023-04-26 15:03:00 ===> Epoch: 5 eval_loss: 3.3902 eval_top1: 28.0600 eval_top5: 55.7100
+2023-04-26 15:03:00 ===> Current epoch time consumption: 0.44 minutes!
+2023-04-26 15:03:25 ===> Current epoch time consumption: 0.42 minutes!
+2023-04-26 15:03:49 ===> Current epoch time consumption: 0.41 minutes!
+2023-04-26 15:04:14 ===> Current epoch time consumption: 0.41 minutes!
+2023-04-26 15:04:38 ===> Current epoch time consumption: 0.41 minutes!
+2023-04-26 15:05:03 ===> Current epoch time consumption: 0.41 minutes!
+2023-04-26 15:05:27 ===> Current epoch time consumption: 0.41 minutes!
+2023-04-26 15:05:52 ===> Current epoch time consumption: 0.42 minutes!
+2023-04-26 15:06:17 ===> Current epoch time consumption: 0.42 minutes!
+2023-04-26 15:06:43 ===> Current epoch time consumption: 0.42 minutes!
+2023-04-26 15:06:44 ===> Current epoch time consumption: 4.19 minutes!
+2023-04-26 15:06:44 ===> Estimated remaining training time: 6.56 hours!
+2023-04-26 15:07:11 ===> Epoch: 6 eval_loss: 3.2507 eval_top1: 30.1900 eval_top5: 58.6100
+2023-04-26 15:07:11 ===> Current epoch time consumption: 0.44 minutes!
+2023-04-26 15:07:36 ===> Current epoch time consumption: 0.42 minutes!
+2023-04-26 15:08:00 ===> Current epoch time consumption: 0.41 minutes!
+2023-04-26 15:08:25 ===> Current epoch time consumption: 0.41 minutes!
+2023-04-26 15:08:50 ===> Current epoch time consumption: 0.41 minutes!
+2023-04-26 15:09:14 ===> Current epoch time consumption: 0.41 minutes!
+2023-04-26 15:09:39 ===> Current epoch time consumption: 0.41 minutes!
+2023-04-26 15:10:04 ===> Current epoch time consumption: 0.42 minutes!
+2023-04-26 15:10:29 ===> Current epoch time consumption: 0.42 minutes!
+2023-04-26 15:10:54 ===> Current epoch time consumption: 0.41 minutes!
+2023-04-26 15:10:55 ===> Current epoch time consumption: 4.18 minutes!
+2023-04-26 15:10:55 ===> Estimated remaining training time: 6.48 hours!
+2023-04-26 15:11:22 ===> Epoch: 7 eval_loss: 3.1580 eval_top1: 32.0100 eval_top5: 61.1700
+2023-04-26 15:11:22 ===> Current epoch time consumption: 0.44 minutes!
+2023-04-26 15:11:47 ===> Current epoch time consumption: 0.42 minutes!
+2023-04-26 15:12:12 ===> Current epoch time consumption: 0.41 minutes!
+2023-04-26 15:12:36 ===> Current epoch time consumption: 0.41 minutes!
+2023-04-26 15:13:01 ===> Current epoch time consumption: 0.41 minutes!
+2023-04-26 15:13:25 ===> Current epoch time consumption: 0.41 minutes!
+2023-04-26 15:13:50 ===> Current epoch time consumption: 0.41 minutes!

@@ -1,0 +1,689 @@
+2023-04-28 05:05:52 ===> --------------------------------------This is all argsurations----------------------------------
+2023-04-28 05:05:52 ===> user=Dylon
+2023-04-28 05:05:52 ===> experiment=NP
+2023-04-28 05:05:52 ===> date=2023-04-28-05:05:52
+2023-04-28 05:05:52 ===> description=non-iid
+2023-04-28 05:05:52 ===> root=path to training set
+2023-04-28 05:05:52 ===> dataset=cifar100
+2023-04-28 05:05:52 ===> data_dist=noniid
+2023-04-28 05:05:52 ===> num_workers=4
+2023-04-28 05:05:52 ===> lr=0.01
+2023-04-28 05:05:52 ===> K=10
+2023-04-28 05:05:52 ===> wd=1e-05
+2023-04-28 05:05:52 ===> mu=0.01
+2023-04-28 05:05:52 ===> epochs=50
+2023-04-28 05:05:52 ===> local_epochs=10
+2023-04-28 05:05:52 ===> seed=0
+2023-04-28 05:05:52 ===> batch_size=128
+2023-04-28 05:05:52 ===> save_freq=50
+2023-04-28 05:05:52 ===> beta=0.5
+2023-04-28 05:05:52 ===> ----------------------------------------This is a halvingline----------------------------------
+2023-04-28 05:05:52 ===> non-iid
+2023-04-28 05:05:56 ===> Loaded backend module://matplotlib_inline.backend_inline version unknown.
+2023-04-28 05:05:56 ===> findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0.
+2023-04-28 05:05:56 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansMono.ttf', name='DejaVu Sans Mono', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2023-04-28 05:05:56 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/STIXSizTwoSymReg.ttf', name='STIXSizeTwoSym', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2023-04-28 05:05:56 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerif-Bold.ttf', name='DejaVu Serif', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2023-04-28 05:05:56 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/STIXSizOneSymBol.ttf', name='STIXSizeOneSym', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2023-04-28 05:05:56 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf', name='DejaVu Sans', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 0.33499999999999996
+2023-04-28 05:05:56 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerif-Italic.ttf', name='DejaVu Serif', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2023-04-28 05:05:56 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/cmsy10.ttf', name='cmsy10', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2023-04-28 05:05:56 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerifDisplay.ttf', name='DejaVu Serif Display', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2023-04-28 05:05:56 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/STIXSizOneSymReg.ttf', name='STIXSizeOneSym', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2023-04-28 05:05:56 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/cmss10.ttf', name='cmss10', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2023-04-28 05:05:56 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansDisplay.ttf', name='DejaVu Sans Display', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2023-04-28 05:05:56 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/STIXSizFiveSymReg.ttf', name='STIXSizeFiveSym', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2023-04-28 05:05:56 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansMono-BoldOblique.ttf', name='DejaVu Sans Mono', style='oblique', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
+2023-04-28 05:05:56 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/STIXNonUni.ttf', name='STIXNonUnicode', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2023-04-28 05:05:56 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/STIXGeneral.ttf', name='STIXGeneral', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2023-04-28 05:05:56 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/STIXNonUniBolIta.ttf', name='STIXNonUnicode', style='italic', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
+2023-04-28 05:05:56 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/cmb10.ttf', name='cmb10', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2023-04-28 05:05:56 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/STIXSizFourSymReg.ttf', name='STIXSizeFourSym', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2023-04-28 05:05:56 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/STIXSizThreeSymReg.ttf', name='STIXSizeThreeSym', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2023-04-28 05:05:56 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/STIXGeneralBolIta.ttf', name='STIXGeneral', style='italic', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
+2023-04-28 05:05:56 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/cmr10.ttf', name='cmr10', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2023-04-28 05:05:56 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/STIXGeneralBol.ttf', name='STIXGeneral', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2023-04-28 05:05:56 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerif-BoldItalic.ttf', name='DejaVu Serif', style='italic', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
+2023-04-28 05:05:56 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-BoldOblique.ttf', name='DejaVu Sans', style='oblique', variant='normal', weight=700, stretch='normal', size='scalable')) = 1.335
+2023-04-28 05:05:56 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansMono-Bold.ttf', name='DejaVu Sans Mono', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2023-04-28 05:05:56 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/STIXSizTwoSymBol.ttf', name='STIXSizeTwoSym', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2023-04-28 05:05:56 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/cmex10.ttf', name='cmex10', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2023-04-28 05:05:56 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerif.ttf', name='DejaVu Serif', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2023-04-28 05:05:56 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/STIXNonUniIta.ttf', name='STIXNonUnicode', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2023-04-28 05:05:56 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/STIXSizThreeSymBol.ttf', name='STIXSizeThreeSym', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2023-04-28 05:05:56 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/STIXNonUniBol.ttf', name='STIXNonUnicode', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2023-04-28 05:05:56 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Oblique.ttf', name='DejaVu Sans', style='oblique', variant='normal', weight=400, stretch='normal', size='scalable')) = 1.05
+2023-04-28 05:05:56 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/STIXSizFourSymBol.ttf', name='STIXSizeFourSym', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2023-04-28 05:05:56 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/cmtt10.ttf', name='cmtt10', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2023-04-28 05:05:56 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansMono-Oblique.ttf', name='DejaVu Sans Mono', style='oblique', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2023-04-28 05:05:56 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/cmmi10.ttf', name='cmmi10', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2023-04-28 05:05:56 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf', name='DejaVu Sans', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 0.05
+2023-04-28 05:05:56 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/STIXGeneralItalic.ttf', name='STIXGeneral', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2023-04-28 05:05:56 ===> findfont: score(FontEntry(fname='/usr/share/fonts/truetype/dejavu/DejaVuSansMono-Bold.ttf', name='DejaVu Sans Mono', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2023-04-28 05:05:56 ===> findfont: score(FontEntry(fname='/usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf', name='DejaVu Serif', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2023-04-28 05:05:56 ===> findfont: score(FontEntry(fname='/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf', name='DejaVu Sans', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 0.05
+2023-04-28 05:05:56 ===> findfont: score(FontEntry(fname='/usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf', name='DejaVu Sans Mono', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2023-04-28 05:05:56 ===> findfont: score(FontEntry(fname='/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf', name='DejaVu Sans', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 0.33499999999999996
+2023-04-28 05:05:56 ===> findfont: score(FontEntry(fname='/usr/share/fonts/truetype/dejavu/DejaVuSerif-Bold.ttf', name='DejaVu Serif', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2023-04-28 05:05:56 ===> findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf') with score of 0.050000.
+2023-04-28 05:05:56 ===> Samples for train of 0= 5034
+2023-04-28 05:05:56 ===> Samples for train of 1= 5025
+2023-04-28 05:05:56 ===> Samples for train of 2= 4969
+2023-04-28 05:05:56 ===> Samples for train of 3= 4942
+2023-04-28 05:05:56 ===> Samples for train of 4= 4965
+2023-04-28 05:05:56 ===> Samples for train of 5= 4969
+2023-04-28 05:05:56 ===> Samples for train of 6= 4989
+2023-04-28 05:05:56 ===> Samples for train of 7= 4995
+2023-04-28 05:05:56 ===> Samples for train of 8= 5025
+2023-04-28 05:05:56 ===> Samples for train of 9= 5087
+2023-04-28 05:06:54 ===> Epoch: 0 eval_loss: 4.9181 eval_top1: 12.4300 eval_top5: 29.8400
+2023-04-28 05:06:54 ===> Current epoch time consumption: 0.88 minutes!
+2023-04-28 05:07:40 ===> Current epoch time consumption: 0.77 minutes!
+2023-04-28 05:08:25 ===> Current epoch time consumption: 0.75 minutes!
+2023-04-28 05:09:11 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 05:09:57 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 05:10:42 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 05:11:28 ===> Current epoch time consumption: 0.75 minutes!
+2023-04-28 05:12:14 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 05:13:01 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 05:13:48 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 05:13:50 ===> Current epoch time consumption: 7.82 minutes!
+2023-04-28 05:13:50 ===> Estimated remaining training time: 6.38 hours!
+2023-04-28 05:14:39 ===> Epoch: 1 eval_loss: 4.4787 eval_top1: 16.5100 eval_top5: 36.9800
+2023-04-28 05:14:39 ===> Current epoch time consumption: 0.81 minutes!
+2023-04-28 05:15:25 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 05:16:11 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 05:16:57 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 05:17:42 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 05:18:28 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 05:19:14 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 05:20:00 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 05:20:47 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 05:21:34 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 05:21:36 ===> Current epoch time consumption: 7.76 minutes!
+2023-04-28 05:21:36 ===> Estimated remaining training time: 6.21 hours!
+2023-04-28 05:22:25 ===> Epoch: 2 eval_loss: 4.1299 eval_top1: 20.0600 eval_top5: 43.4600
+2023-04-28 05:22:25 ===> Current epoch time consumption: 0.81 minutes!
+2023-04-28 05:23:11 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 05:23:57 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 05:24:42 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 05:25:28 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 05:26:14 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 05:27:00 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 05:27:46 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 05:28:33 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 05:29:19 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 05:29:22 ===> Current epoch time consumption: 7.76 minutes!
+2023-04-28 05:29:22 ===> Estimated remaining training time: 6.08 hours!
+2023-04-28 05:30:10 ===> Epoch: 3 eval_loss: 3.8734 eval_top1: 23.3700 eval_top5: 47.6500
+2023-04-28 05:30:10 ===> Current epoch time consumption: 0.81 minutes!
+2023-04-28 05:30:57 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 05:31:43 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 05:32:28 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 05:33:14 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 05:33:59 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 05:34:45 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 05:35:31 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 05:36:18 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 05:37:04 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 05:37:07 ===> Current epoch time consumption: 7.75 minutes!
+2023-04-28 05:37:07 ===> Estimated remaining training time: 5.94 hours!
+2023-04-28 05:37:56 ===> Epoch: 4 eval_loss: 3.6308 eval_top1: 24.9200 eval_top5: 50.3500
+2023-04-28 05:37:56 ===> Current epoch time consumption: 0.81 minutes!
+2023-04-28 05:38:42 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 05:39:28 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 05:40:13 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 05:40:59 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 05:41:44 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 05:42:30 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 05:43:16 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 05:44:03 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 05:44:50 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 05:44:52 ===> Current epoch time consumption: 7.75 minutes!
+2023-04-28 05:44:52 ===> Estimated remaining training time: 5.81 hours!
+2023-04-28 05:45:41 ===> Epoch: 5 eval_loss: 3.4037 eval_top1: 28.3800 eval_top5: 55.5800
+2023-04-28 05:45:41 ===> Current epoch time consumption: 0.81 minutes!
+2023-04-28 05:46:28 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 05:47:13 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 05:47:59 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 05:48:45 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 05:49:30 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 05:50:15 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 05:51:02 ===> Current epoch time consumption: 0.77 minutes!
+2023-04-28 05:51:48 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 05:52:35 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 05:52:37 ===> Current epoch time consumption: 7.76 minutes!
+2023-04-28 05:52:37 ===> Estimated remaining training time: 5.69 hours!
+2023-04-28 05:53:26 ===> Epoch: 6 eval_loss: 3.2420 eval_top1: 30.8100 eval_top5: 58.5000
+2023-04-28 05:53:26 ===> Current epoch time consumption: 0.82 minutes!
+2023-04-28 05:54:13 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 05:54:59 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 05:55:44 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 05:56:30 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 05:57:15 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 05:58:01 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 05:58:48 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 05:59:34 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 06:00:21 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 06:00:23 ===> Current epoch time consumption: 7.76 minutes!
+2023-04-28 06:00:23 ===> Estimated remaining training time: 5.56 hours!
+2023-04-28 06:01:12 ===> Epoch: 7 eval_loss: 3.1614 eval_top1: 31.9800 eval_top5: 61.1500
+2023-04-28 06:01:12 ===> Current epoch time consumption: 0.81 minutes!
+2023-04-28 06:01:59 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 06:02:44 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 06:03:30 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 06:04:15 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 06:05:01 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 06:05:47 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 06:06:33 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 06:07:20 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 06:08:07 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 06:08:09 ===> Current epoch time consumption: 7.77 minutes!
+2023-04-28 06:08:09 ===> Estimated remaining training time: 5.44 hours!
+2023-04-28 06:08:58 ===> Epoch: 8 eval_loss: 3.0745 eval_top1: 33.3500 eval_top5: 63.4700
+2023-04-28 06:08:58 ===> Current epoch time consumption: 0.82 minutes!
+2023-04-28 06:09:45 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 06:10:31 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 06:11:17 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 06:12:02 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 06:12:48 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 06:13:33 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 06:14:20 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 06:15:07 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 06:15:54 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 06:15:56 ===> Current epoch time consumption: 7.78 minutes!
+2023-04-28 06:15:56 ===> Estimated remaining training time: 5.32 hours!
+2023-04-28 06:16:45 ===> Epoch: 9 eval_loss: 3.0123 eval_top1: 34.6300 eval_top5: 65.7600
+2023-04-28 06:16:45 ===> Current epoch time consumption: 0.82 minutes!
+2023-04-28 06:17:32 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 06:18:18 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 06:19:03 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 06:19:49 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 06:20:34 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 06:21:20 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 06:22:08 ===> Current epoch time consumption: 0.79 minutes!
+2023-04-28 06:22:55 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 06:23:42 ===> Current epoch time consumption: 0.79 minutes!
+2023-04-28 06:23:44 ===> Current epoch time consumption: 7.80 minutes!
+2023-04-28 06:23:44 ===> Estimated remaining training time: 5.20 hours!
+2023-04-28 06:24:34 ===> Epoch: 10 eval_loss: 2.9676 eval_top1: 35.9000 eval_top5: 67.5600
+2023-04-28 06:24:34 ===> Current epoch time consumption: 0.82 minutes!
+2023-04-28 06:25:21 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 06:26:07 ===> Current epoch time consumption: 0.77 minutes!
+2023-04-28 06:26:53 ===> Current epoch time consumption: 0.77 minutes!
+2023-04-28 06:27:39 ===> Current epoch time consumption: 0.77 minutes!
+2023-04-28 06:28:25 ===> Current epoch time consumption: 0.77 minutes!
+2023-04-28 06:29:11 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 06:29:58 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 06:30:45 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 06:31:32 ===> Current epoch time consumption: 0.79 minutes!
+2023-04-28 06:31:35 ===> Current epoch time consumption: 7.84 minutes!
+2023-04-28 06:31:35 ===> Estimated remaining training time: 5.09 hours!
+2023-04-28 06:32:24 ===> Epoch: 11 eval_loss: 2.9353 eval_top1: 36.3800 eval_top5: 68.3200
+2023-04-28 06:32:24 ===> Current epoch time consumption: 0.83 minutes!
+2023-04-28 06:33:11 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 06:33:56 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 06:34:42 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 06:35:27 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 06:36:13 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 06:36:58 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 06:37:45 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 06:38:32 ===> Current epoch time consumption: 0.79 minutes!
+2023-04-28 06:39:20 ===> Current epoch time consumption: 0.79 minutes!
+2023-04-28 06:39:22 ===> Current epoch time consumption: 7.79 minutes!
+2023-04-28 06:39:22 ===> Estimated remaining training time: 4.94 hours!
+2023-04-28 06:40:11 ===> Epoch: 12 eval_loss: 2.8440 eval_top1: 38.2400 eval_top5: 70.0100
+2023-04-28 06:40:11 ===> Current epoch time consumption: 0.82 minutes!
+2023-04-28 06:40:58 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 06:41:45 ===> Current epoch time consumption: 0.77 minutes!
+2023-04-28 06:42:31 ===> Current epoch time consumption: 0.77 minutes!
+2023-04-28 06:43:17 ===> Current epoch time consumption: 0.77 minutes!
+2023-04-28 06:44:03 ===> Current epoch time consumption: 0.77 minutes!
+2023-04-28 06:44:50 ===> Current epoch time consumption: 0.77 minutes!
+2023-04-28 06:45:37 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 06:46:24 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 06:47:11 ===> Current epoch time consumption: 0.79 minutes!
+2023-04-28 06:47:13 ===> Current epoch time consumption: 7.85 minutes!
+2023-04-28 06:47:13 ===> Estimated remaining training time: 4.84 hours!
+2023-04-28 06:48:03 ===> Epoch: 13 eval_loss: 2.7809 eval_top1: 39.3000 eval_top5: 72.1300
+2023-04-28 06:48:03 ===> Current epoch time consumption: 0.83 minutes!
+2023-04-28 06:48:50 ===> Current epoch time consumption: 0.79 minutes!
+2023-04-28 06:49:36 ===> Current epoch time consumption: 0.77 minutes!
+2023-04-28 06:50:22 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 06:51:08 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 06:51:53 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 06:52:39 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 06:53:25 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 06:54:12 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 06:54:59 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 06:55:01 ===> Current epoch time consumption: 7.79 minutes!
+2023-04-28 06:55:01 ===> Estimated remaining training time: 4.68 hours!
+2023-04-28 06:55:50 ===> Epoch: 14 eval_loss: 2.8024 eval_top1: 40.2300 eval_top5: 72.1300
+2023-04-28 06:55:50 ===> Current epoch time consumption: 0.82 minutes!
+2023-04-28 06:56:37 ===> Current epoch time consumption: 0.79 minutes!
+2023-04-28 06:57:23 ===> Current epoch time consumption: 0.77 minutes!
+2023-04-28 06:58:09 ===> Current epoch time consumption: 0.77 minutes!
+2023-04-28 06:58:55 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 06:59:41 ===> Current epoch time consumption: 0.77 minutes!
+2023-04-28 07:00:27 ===> Current epoch time consumption: 0.77 minutes!
+2023-04-28 07:01:15 ===> Current epoch time consumption: 0.79 minutes!
+2023-04-28 07:02:02 ===> Current epoch time consumption: 0.79 minutes!
+2023-04-28 07:02:50 ===> Current epoch time consumption: 0.79 minutes!
+2023-04-28 07:02:52 ===> Current epoch time consumption: 7.85 minutes!
+2023-04-28 07:02:52 ===> Estimated remaining training time: 4.58 hours!
+2023-04-28 07:03:42 ===> Epoch: 15 eval_loss: 2.7747 eval_top1: 40.7600 eval_top5: 73.1300
+2023-04-28 07:03:42 ===> Current epoch time consumption: 0.83 minutes!
+2023-04-28 07:04:29 ===> Current epoch time consumption: 0.79 minutes!
+2023-04-28 07:05:15 ===> Current epoch time consumption: 0.77 minutes!
+2023-04-28 07:06:01 ===> Current epoch time consumption: 0.77 minutes!
+2023-04-28 07:06:47 ===> Current epoch time consumption: 0.77 minutes!
+2023-04-28 07:07:34 ===> Current epoch time consumption: 0.77 minutes!
+2023-04-28 07:08:20 ===> Current epoch time consumption: 0.77 minutes!
+2023-04-28 07:09:07 ===> Current epoch time consumption: 0.79 minutes!
+2023-04-28 07:09:54 ===> Current epoch time consumption: 0.79 minutes!
+2023-04-28 07:10:42 ===> Current epoch time consumption: 0.79 minutes!
+2023-04-28 07:10:44 ===> Current epoch time consumption: 7.86 minutes!
+2023-04-28 07:10:44 ===> Estimated remaining training time: 4.45 hours!
+2023-04-28 07:11:33 ===> Epoch: 16 eval_loss: 2.7136 eval_top1: 41.3100 eval_top5: 73.8100
+2023-04-28 07:11:33 ===> Current epoch time consumption: 0.83 minutes!
+2023-04-28 07:12:20 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 07:13:07 ===> Current epoch time consumption: 0.77 minutes!
+2023-04-28 07:13:53 ===> Current epoch time consumption: 0.77 minutes!
+2023-04-28 07:14:39 ===> Current epoch time consumption: 0.77 minutes!
+2023-04-28 07:15:25 ===> Current epoch time consumption: 0.77 minutes!
+2023-04-28 07:16:11 ===> Current epoch time consumption: 0.77 minutes!
+2023-04-28 07:16:58 ===> Current epoch time consumption: 0.79 minutes!
+2023-04-28 07:17:46 ===> Current epoch time consumption: 0.79 minutes!
+2023-04-28 07:18:33 ===> Current epoch time consumption: 0.79 minutes!
+2023-04-28 07:18:35 ===> Current epoch time consumption: 7.86 minutes!
+2023-04-28 07:18:35 ===> Estimated remaining training time: 4.32 hours!
+2023-04-28 07:19:25 ===> Epoch: 17 eval_loss: 2.6742 eval_top1: 42.1100 eval_top5: 74.6900
+2023-04-28 07:19:25 ===> Current epoch time consumption: 0.82 minutes!
+2023-04-28 07:20:12 ===> Current epoch time consumption: 0.79 minutes!
+2023-04-28 07:20:58 ===> Current epoch time consumption: 0.77 minutes!
+2023-04-28 07:21:44 ===> Current epoch time consumption: 0.77 minutes!
+2023-04-28 07:22:30 ===> Current epoch time consumption: 0.77 minutes!
+2023-04-28 07:23:16 ===> Current epoch time consumption: 0.77 minutes!
+2023-04-28 07:24:02 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 07:24:49 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 07:25:36 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 07:26:23 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 07:26:25 ===> Current epoch time consumption: 7.83 minutes!
+2023-04-28 07:26:25 ===> Estimated remaining training time: 4.17 hours!
+2023-04-28 07:27:14 ===> Epoch: 18 eval_loss: 2.6628 eval_top1: 42.8500 eval_top5: 75.1000
+2023-04-28 07:27:14 ===> Current epoch time consumption: 0.82 minutes!
+2023-04-28 07:28:01 ===> Current epoch time consumption: 0.79 minutes!
+2023-04-28 07:28:48 ===> Current epoch time consumption: 0.77 minutes!
+2023-04-28 07:29:34 ===> Current epoch time consumption: 0.77 minutes!
+2023-04-28 07:30:20 ===> Current epoch time consumption: 0.77 minutes!
+2023-04-28 07:31:06 ===> Current epoch time consumption: 0.77 minutes!
+2023-04-28 07:31:52 ===> Current epoch time consumption: 0.77 minutes!
+2023-04-28 07:32:39 ===> Current epoch time consumption: 0.79 minutes!
+2023-04-28 07:33:27 ===> Current epoch time consumption: 0.79 minutes!
+2023-04-28 07:34:14 ===> Current epoch time consumption: 0.79 minutes!
+2023-04-28 07:34:16 ===> Current epoch time consumption: 7.85 minutes!
+2023-04-28 07:34:16 ===> Estimated remaining training time: 4.06 hours!
+2023-04-28 07:35:06 ===> Epoch: 19 eval_loss: 2.6313 eval_top1: 43.2200 eval_top5: 75.5500
+2023-04-28 07:35:06 ===> Current epoch time consumption: 0.83 minutes!
+2023-04-28 07:35:53 ===> Current epoch time consumption: 0.79 minutes!
+2023-04-28 07:36:39 ===> Current epoch time consumption: 0.77 minutes!
+2023-04-28 07:37:25 ===> Current epoch time consumption: 0.77 minutes!
+2023-04-28 07:38:11 ===> Current epoch time consumption: 0.77 minutes!
+2023-04-28 07:38:57 ===> Current epoch time consumption: 0.77 minutes!
+2023-04-28 07:39:44 ===> Current epoch time consumption: 0.77 minutes!
+2023-04-28 07:40:31 ===> Current epoch time consumption: 0.79 minutes!
+2023-04-28 07:41:18 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 07:42:05 ===> Current epoch time consumption: 0.79 minutes!
+2023-04-28 07:42:07 ===> Current epoch time consumption: 7.85 minutes!
+2023-04-28 07:42:07 ===> Estimated remaining training time: 3.92 hours!
+2023-04-28 07:42:57 ===> Epoch: 20 eval_loss: 2.5926 eval_top1: 44.2000 eval_top5: 76.2600
+2023-04-28 07:42:57 ===> Current epoch time consumption: 0.83 minutes!
+2023-04-28 07:43:44 ===> Current epoch time consumption: 0.79 minutes!
+2023-04-28 07:44:30 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 07:45:17 ===> Current epoch time consumption: 0.77 minutes!
+2023-04-28 07:46:03 ===> Current epoch time consumption: 0.77 minutes!
+2023-04-28 07:46:50 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 07:47:36 ===> Current epoch time consumption: 0.77 minutes!
+2023-04-28 07:48:23 ===> Current epoch time consumption: 0.79 minutes!
+2023-04-28 07:49:10 ===> Current epoch time consumption: 0.79 minutes!
+2023-04-28 07:49:57 ===> Current epoch time consumption: 0.79 minutes!
+2023-04-28 07:50:00 ===> Current epoch time consumption: 7.88 minutes!
+2023-04-28 07:50:00 ===> Estimated remaining training time: 3.81 hours!
+2023-04-28 07:50:49 ===> Epoch: 21 eval_loss: 2.6081 eval_top1: 43.8300 eval_top5: 76.4300
+2023-04-28 07:50:49 ===> Current epoch time consumption: 0.82 minutes!
+2023-04-28 07:51:36 ===> Current epoch time consumption: 0.79 minutes!
+2023-04-28 07:52:22 ===> Current epoch time consumption: 0.77 minutes!
+2023-04-28 07:53:08 ===> Current epoch time consumption: 0.77 minutes!
+2023-04-28 07:53:55 ===> Current epoch time consumption: 0.77 minutes!
+2023-04-28 07:54:41 ===> Current epoch time consumption: 0.77 minutes!
+2023-04-28 07:55:27 ===> Current epoch time consumption: 0.77 minutes!
+2023-04-28 07:56:15 ===> Current epoch time consumption: 0.79 minutes!
+2023-04-28 07:57:02 ===> Current epoch time consumption: 0.79 minutes!
+2023-04-28 07:57:49 ===> Current epoch time consumption: 0.79 minutes!
+2023-04-28 07:57:51 ===> Current epoch time consumption: 7.86 minutes!
+2023-04-28 07:57:51 ===> Estimated remaining training time: 3.67 hours!
+2023-04-28 07:58:41 ===> Epoch: 22 eval_loss: 2.6062 eval_top1: 44.0700 eval_top5: 76.4900
+2023-04-28 07:58:41 ===> Current epoch time consumption: 0.83 minutes!
+2023-04-28 07:59:28 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 08:00:14 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 08:01:00 ===> Current epoch time consumption: 0.77 minutes!
+2023-04-28 08:01:46 ===> Current epoch time consumption: 0.77 minutes!
+2023-04-28 08:02:32 ===> Current epoch time consumption: 0.77 minutes!
+2023-04-28 08:03:19 ===> Current epoch time consumption: 0.77 minutes!
+2023-04-28 08:04:06 ===> Current epoch time consumption: 0.79 minutes!
+2023-04-28 08:04:53 ===> Current epoch time consumption: 0.79 minutes!
+2023-04-28 08:05:40 ===> Current epoch time consumption: 0.79 minutes!
+2023-04-28 08:05:42 ===> Current epoch time consumption: 7.85 minutes!
+2023-04-28 08:05:42 ===> Estimated remaining training time: 3.53 hours!
+2023-04-28 08:06:32 ===> Epoch: 23 eval_loss: 2.5692 eval_top1: 45.1700 eval_top5: 77.8300
+2023-04-28 08:06:32 ===> Current epoch time consumption: 0.83 minutes!
+2023-04-28 08:07:19 ===> Current epoch time consumption: 0.79 minutes!
+2023-04-28 08:08:06 ===> Current epoch time consumption: 0.77 minutes!
+2023-04-28 08:08:52 ===> Current epoch time consumption: 0.77 minutes!
+2023-04-28 08:09:37 ===> Current epoch time consumption: 0.77 minutes!
+2023-04-28 08:10:24 ===> Current epoch time consumption: 0.77 minutes!
+2023-04-28 08:11:09 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 08:11:56 ===> Current epoch time consumption: 0.79 minutes!
+2023-04-28 08:12:44 ===> Current epoch time consumption: 0.79 minutes!
+2023-04-28 08:13:31 ===> Current epoch time consumption: 0.79 minutes!
+2023-04-28 08:13:33 ===> Current epoch time consumption: 7.85 minutes!
+2023-04-28 08:13:33 ===> Estimated remaining training time: 3.40 hours!
+2023-04-28 08:14:23 ===> Epoch: 24 eval_loss: 2.5400 eval_top1: 45.0800 eval_top5: 77.8100
+2023-04-28 08:14:23 ===> Current epoch time consumption: 0.83 minutes!
+2023-04-28 08:15:10 ===> Current epoch time consumption: 0.79 minutes!
+2023-04-28 08:15:56 ===> Current epoch time consumption: 0.77 minutes!
+2023-04-28 08:16:42 ===> Current epoch time consumption: 0.77 minutes!
+2023-04-28 08:17:29 ===> Current epoch time consumption: 0.77 minutes!
+2023-04-28 08:18:15 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 08:19:01 ===> Current epoch time consumption: 0.77 minutes!
+2023-04-28 08:19:48 ===> Current epoch time consumption: 0.79 minutes!
+2023-04-28 08:20:36 ===> Current epoch time consumption: 0.79 minutes!
+2023-04-28 08:21:23 ===> Current epoch time consumption: 0.79 minutes!
+2023-04-28 08:21:25 ===> Current epoch time consumption: 7.87 minutes!
+2023-04-28 08:21:25 ===> Estimated remaining training time: 3.28 hours!
+2023-04-28 08:22:15 ===> Epoch: 25 eval_loss: 2.5547 eval_top1: 45.2600 eval_top5: 77.5500
+2023-04-28 08:22:15 ===> Current epoch time consumption: 0.82 minutes!
+2023-04-28 08:23:02 ===> Current epoch time consumption: 0.79 minutes!
+2023-04-28 08:23:48 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 08:24:34 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 08:25:20 ===> Current epoch time consumption: 0.77 minutes!
+2023-04-28 08:26:05 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 08:26:51 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 08:27:38 ===> Current epoch time consumption: 0.79 minutes!
+2023-04-28 08:28:26 ===> Current epoch time consumption: 0.79 minutes!
+2023-04-28 08:29:13 ===> Current epoch time consumption: 0.79 minutes!
+2023-04-28 08:29:15 ===> Current epoch time consumption: 7.83 minutes!
+2023-04-28 08:29:15 ===> Estimated remaining training time: 3.13 hours!
+2023-04-28 08:30:05 ===> Epoch: 26 eval_loss: 2.4975 eval_top1: 45.7900 eval_top5: 78.3700
+2023-04-28 08:30:05 ===> Current epoch time consumption: 0.83 minutes!
+2023-04-28 08:30:52 ===> Current epoch time consumption: 0.79 minutes!
+2023-04-28 08:31:39 ===> Current epoch time consumption: 0.77 minutes!
+2023-04-28 08:32:25 ===> Current epoch time consumption: 0.77 minutes!
+2023-04-28 08:33:11 ===> Current epoch time consumption: 0.77 minutes!
+2023-04-28 08:33:58 ===> Current epoch time consumption: 0.77 minutes!
+2023-04-28 08:34:44 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 08:35:32 ===> Current epoch time consumption: 0.79 minutes!
+2023-04-28 08:36:19 ===> Current epoch time consumption: 0.79 minutes!
+2023-04-28 08:37:08 ===> Current epoch time consumption: 0.81 minutes!
+2023-04-28 08:37:10 ===> Current epoch time consumption: 7.92 minutes!
+2023-04-28 08:37:10 ===> Estimated remaining training time: 3.03 hours!
+2023-04-28 08:38:00 ===> Epoch: 27 eval_loss: 2.5050 eval_top1: 46.2200 eval_top5: 78.4900
+2023-04-28 08:38:00 ===> Current epoch time consumption: 0.82 minutes!
+2023-04-28 08:38:47 ===> Current epoch time consumption: 0.79 minutes!
+2023-04-28 08:39:33 ===> Current epoch time consumption: 0.77 minutes!
+2023-04-28 08:40:20 ===> Current epoch time consumption: 0.77 minutes!
+2023-04-28 08:41:06 ===> Current epoch time consumption: 0.77 minutes!
+2023-04-28 08:41:52 ===> Current epoch time consumption: 0.77 minutes!
+2023-04-28 08:42:38 ===> Current epoch time consumption: 0.77 minutes!
+2023-04-28 08:43:25 ===> Current epoch time consumption: 0.79 minutes!
+2023-04-28 08:44:12 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 08:45:00 ===> Current epoch time consumption: 0.79 minutes!
+2023-04-28 08:45:02 ===> Current epoch time consumption: 7.87 minutes!
+2023-04-28 08:45:02 ===> Estimated remaining training time: 2.88 hours!
+2023-04-28 08:45:52 ===> Epoch: 28 eval_loss: 2.5021 eval_top1: 46.4300 eval_top5: 79.2100
+2023-04-28 08:45:52 ===> Current epoch time consumption: 0.82 minutes!
+2023-04-28 08:46:39 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 08:47:25 ===> Current epoch time consumption: 0.77 minutes!
+2023-04-28 08:48:11 ===> Current epoch time consumption: 0.77 minutes!
+2023-04-28 08:48:57 ===> Current epoch time consumption: 0.77 minutes!
+2023-04-28 08:49:43 ===> Current epoch time consumption: 0.77 minutes!
+2023-04-28 08:50:29 ===> Current epoch time consumption: 0.77 minutes!
+2023-04-28 08:51:17 ===> Current epoch time consumption: 0.79 minutes!
+2023-04-28 08:52:04 ===> Current epoch time consumption: 0.79 minutes!
+2023-04-28 08:52:51 ===> Current epoch time consumption: 0.79 minutes!
+2023-04-28 08:52:54 ===> Current epoch time consumption: 7.86 minutes!
+2023-04-28 08:52:54 ===> Estimated remaining training time: 2.75 hours!
+2023-04-28 08:53:43 ===> Epoch: 29 eval_loss: 2.4895 eval_top1: 46.7900 eval_top5: 79.0700
+2023-04-28 08:53:43 ===> Current epoch time consumption: 0.82 minutes!
+2023-04-28 08:54:30 ===> Current epoch time consumption: 0.79 minutes!
+2023-04-28 08:55:16 ===> Current epoch time consumption: 0.77 minutes!
+2023-04-28 08:56:02 ===> Current epoch time consumption: 0.77 minutes!
+2023-04-28 08:56:48 ===> Current epoch time consumption: 0.77 minutes!
+2023-04-28 08:57:35 ===> Current epoch time consumption: 0.77 minutes!
+2023-04-28 08:58:21 ===> Current epoch time consumption: 0.77 minutes!
+2023-04-28 08:59:08 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 08:59:55 ===> Current epoch time consumption: 0.79 minutes!
+2023-04-28 09:00:42 ===> Current epoch time consumption: 0.79 minutes!
+2023-04-28 09:00:45 ===> Current epoch time consumption: 7.85 minutes!
+2023-04-28 09:00:45 ===> Estimated remaining training time: 2.62 hours!
+2023-04-28 09:01:34 ===> Epoch: 30 eval_loss: 2.4805 eval_top1: 47.6500 eval_top5: 79.2700
+2023-04-28 09:01:34 ===> Current epoch time consumption: 0.83 minutes!
+2023-04-28 09:02:22 ===> Current epoch time consumption: 0.79 minutes!
+2023-04-28 09:03:08 ===> Current epoch time consumption: 0.77 minutes!
+2023-04-28 09:03:54 ===> Current epoch time consumption: 0.77 minutes!
+2023-04-28 09:04:40 ===> Current epoch time consumption: 0.77 minutes!
+2023-04-28 09:05:26 ===> Current epoch time consumption: 0.77 minutes!
+2023-04-28 09:06:12 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 09:06:59 ===> Current epoch time consumption: 0.79 minutes!
+2023-04-28 09:07:47 ===> Current epoch time consumption: 0.79 minutes!
+2023-04-28 09:08:34 ===> Current epoch time consumption: 0.79 minutes!
+2023-04-28 09:08:36 ===> Current epoch time consumption: 7.86 minutes!
+2023-04-28 09:08:36 ===> Estimated remaining training time: 2.49 hours!
+2023-04-28 09:09:26 ===> Epoch: 31 eval_loss: 2.4447 eval_top1: 47.0700 eval_top5: 79.8800
+2023-04-28 09:09:26 ===> Current epoch time consumption: 0.83 minutes!
+2023-04-28 09:10:13 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 09:10:58 ===> Current epoch time consumption: 0.77 minutes!
+2023-04-28 09:11:45 ===> Current epoch time consumption: 0.77 minutes!
+2023-04-28 09:12:31 ===> Current epoch time consumption: 0.77 minutes!
+2023-04-28 09:13:17 ===> Current epoch time consumption: 0.77 minutes!
+2023-04-28 09:14:03 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 09:14:50 ===> Current epoch time consumption: 0.79 minutes!
+2023-04-28 09:15:38 ===> Current epoch time consumption: 0.79 minutes!
+2023-04-28 09:16:25 ===> Current epoch time consumption: 0.79 minutes!
+2023-04-28 09:16:27 ===> Current epoch time consumption: 7.85 minutes!
+2023-04-28 09:16:27 ===> Estimated remaining training time: 2.36 hours!
+2023-04-28 09:17:17 ===> Epoch: 32 eval_loss: 2.4858 eval_top1: 47.0300 eval_top5: 78.9200
+2023-04-28 09:17:17 ===> Current epoch time consumption: 0.83 minutes!
+2023-04-28 09:18:04 ===> Current epoch time consumption: 0.79 minutes!
+2023-04-28 09:18:51 ===> Current epoch time consumption: 0.77 minutes!
+2023-04-28 09:19:36 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 09:20:23 ===> Current epoch time consumption: 0.77 minutes!
+2023-04-28 09:21:08 ===> Current epoch time consumption: 0.77 minutes!
+2023-04-28 09:21:55 ===> Current epoch time consumption: 0.77 minutes!
+2023-04-28 09:22:41 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 09:23:28 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 09:24:15 ===> Current epoch time consumption: 0.77 minutes!
+2023-04-28 09:24:17 ===> Current epoch time consumption: 7.82 minutes!
+2023-04-28 09:24:17 ===> Estimated remaining training time: 2.22 hours!
+2023-04-28 09:25:06 ===> Epoch: 33 eval_loss: 2.4602 eval_top1: 47.4500 eval_top5: 79.6100
+2023-04-28 09:25:06 ===> Current epoch time consumption: 0.82 minutes!
+2023-04-28 09:25:52 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 09:26:38 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 09:27:24 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 09:28:09 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 09:28:55 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 09:29:40 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 09:30:27 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 09:31:14 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 09:32:00 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 09:32:03 ===> Current epoch time consumption: 7.76 minutes!
+2023-04-28 09:32:03 ===> Estimated remaining training time: 2.07 hours!
+2023-04-28 09:32:52 ===> Epoch: 34 eval_loss: 2.4340 eval_top1: 48.0700 eval_top5: 79.8400
+2023-04-28 09:32:52 ===> Current epoch time consumption: 0.82 minutes!
+2023-04-28 09:33:38 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 09:34:24 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 09:35:09 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 09:35:55 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 09:36:40 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 09:37:26 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 09:38:12 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 09:38:59 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 09:39:46 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 09:39:48 ===> Current epoch time consumption: 7.76 minutes!
+2023-04-28 09:39:48 ===> Estimated remaining training time: 1.94 hours!
+2023-04-28 09:40:37 ===> Epoch: 35 eval_loss: 2.4405 eval_top1: 47.6200 eval_top5: 79.9800
+2023-04-28 09:40:37 ===> Current epoch time consumption: 0.81 minutes!
+2023-04-28 09:41:23 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 09:42:09 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 09:42:55 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 09:43:40 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 09:44:26 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 09:45:11 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 09:45:58 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 09:46:45 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 09:47:31 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 09:47:34 ===> Current epoch time consumption: 7.76 minutes!
+2023-04-28 09:47:34 ===> Estimated remaining training time: 1.81 hours!
+2023-04-28 09:48:22 ===> Epoch: 36 eval_loss: 2.4336 eval_top1: 48.3600 eval_top5: 80.3000
+2023-04-28 09:48:22 ===> Current epoch time consumption: 0.82 minutes!
+2023-04-28 09:49:09 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 09:49:55 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 09:50:40 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 09:51:26 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 09:52:11 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 09:52:57 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 09:53:43 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 09:54:30 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 09:55:17 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 09:55:19 ===> Current epoch time consumption: 7.76 minutes!
+2023-04-28 09:55:19 ===> Estimated remaining training time: 1.68 hours!
+2023-04-28 09:56:08 ===> Epoch: 37 eval_loss: 2.4461 eval_top1: 48.8200 eval_top5: 80.2300
+2023-04-28 09:56:08 ===> Current epoch time consumption: 0.82 minutes!
+2023-04-28 09:56:54 ===> Current epoch time consumption: 0.77 minutes!
+2023-04-28 09:57:40 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 09:58:26 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 09:59:11 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 09:59:57 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 10:00:43 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 10:01:29 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 10:02:16 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 10:03:03 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 10:03:05 ===> Current epoch time consumption: 7.77 minutes!
+2023-04-28 10:03:05 ===> Estimated remaining training time: 1.55 hours!
+2023-04-28 10:03:54 ===> Epoch: 38 eval_loss: 2.4113 eval_top1: 49.2100 eval_top5: 80.7200
+2023-04-28 10:03:54 ===> Current epoch time consumption: 0.82 minutes!
+2023-04-28 10:04:41 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 10:05:27 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 10:06:12 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 10:06:58 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 10:07:44 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 10:08:29 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 10:09:16 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 10:10:02 ===> Current epoch time consumption: 0.77 minutes!
+2023-04-28 10:10:49 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 10:10:51 ===> Current epoch time consumption: 7.77 minutes!
+2023-04-28 10:10:51 ===> Estimated remaining training time: 1.42 hours!
+2023-04-28 10:11:40 ===> Epoch: 39 eval_loss: 2.4349 eval_top1: 48.9700 eval_top5: 80.7400
+2023-04-28 10:11:40 ===> Current epoch time consumption: 0.82 minutes!
+2023-04-28 10:12:27 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 10:13:13 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 10:13:58 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 10:14:44 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 10:15:29 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 10:16:15 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 10:17:01 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 10:17:48 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 10:18:35 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 10:18:37 ===> Current epoch time consumption: 7.76 minutes!
+2023-04-28 10:18:37 ===> Estimated remaining training time: 1.29 hours!
+2023-04-28 10:19:26 ===> Epoch: 40 eval_loss: 2.4180 eval_top1: 49.1900 eval_top5: 80.3400
+2023-04-28 10:19:26 ===> Current epoch time consumption: 0.81 minutes!
+2023-04-28 10:20:12 ===> Current epoch time consumption: 0.77 minutes!
+2023-04-28 10:20:58 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 10:21:43 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 10:22:29 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 10:23:15 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 10:24:00 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 10:24:47 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 10:25:35 ===> Current epoch time consumption: 0.79 minutes!
+2023-04-28 10:26:21 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 10:26:23 ===> Current epoch time consumption: 7.77 minutes!
+2023-04-28 10:26:23 ===> Estimated remaining training time: 1.17 hours!
+2023-04-28 10:27:12 ===> Epoch: 41 eval_loss: 2.4040 eval_top1: 49.2900 eval_top5: 80.9700
+2023-04-28 10:27:12 ===> Current epoch time consumption: 0.81 minutes!
+2023-04-28 10:27:59 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 10:28:44 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 10:29:30 ===> Current epoch time consumption: 0.77 minutes!
+2023-04-28 10:30:16 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 10:31:02 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 10:31:47 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 10:32:34 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 10:33:20 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 10:34:07 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 10:34:09 ===> Current epoch time consumption: 7.77 minutes!
+2023-04-28 10:34:09 ===> Estimated remaining training time: 1.04 hours!
+2023-04-28 10:34:58 ===> Epoch: 42 eval_loss: 2.3685 eval_top1: 49.1900 eval_top5: 81.3800
+2023-04-28 10:34:58 ===> Current epoch time consumption: 0.82 minutes!
+2023-04-28 10:35:45 ===> Current epoch time consumption: 0.77 minutes!
+2023-04-28 10:36:31 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 10:37:16 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 10:38:02 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 10:38:47 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 10:39:33 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 10:40:19 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 10:41:06 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 10:41:53 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 10:41:55 ===> Current epoch time consumption: 7.77 minutes!
+2023-04-28 10:41:55 ===> Estimated remaining training time: 0.91 hours!
+2023-04-28 10:42:44 ===> Epoch: 43 eval_loss: 2.3892 eval_top1: 49.7500 eval_top5: 80.9800
+2023-04-28 10:42:44 ===> Current epoch time consumption: 0.81 minutes!
+2023-04-28 10:43:31 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 10:44:17 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 10:45:02 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 10:45:48 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 10:46:34 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 10:47:19 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 10:48:06 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 10:48:53 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 10:49:39 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 10:49:42 ===> Current epoch time consumption: 7.77 minutes!
+2023-04-28 10:49:42 ===> Estimated remaining training time: 0.78 hours!
+2023-04-28 10:50:31 ===> Epoch: 44 eval_loss: 2.3825 eval_top1: 49.5700 eval_top5: 81.0100
+2023-04-28 10:50:31 ===> Current epoch time consumption: 0.82 minutes!
+2023-04-28 10:51:17 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 10:52:03 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 10:52:49 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 10:53:34 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 10:54:20 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 10:55:05 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 10:55:52 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 10:56:39 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 10:57:26 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 10:57:28 ===> Current epoch time consumption: 7.77 minutes!
+2023-04-28 10:57:28 ===> Estimated remaining training time: 0.65 hours!
+2023-04-28 10:58:17 ===> Epoch: 45 eval_loss: 2.3947 eval_top1: 49.6600 eval_top5: 80.5800
+2023-04-28 10:58:17 ===> Current epoch time consumption: 0.81 minutes!
+2023-04-28 10:59:03 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 10:59:49 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 11:00:35 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 11:01:20 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 11:02:05 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 11:02:51 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 11:03:38 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 11:04:25 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 11:05:11 ===> Current epoch time consumption: 0.77 minutes!
+2023-04-28 11:05:13 ===> Current epoch time consumption: 7.76 minutes!
+2023-04-28 11:05:13 ===> Estimated remaining training time: 0.52 hours!
+2023-04-28 11:06:02 ===> Epoch: 46 eval_loss: 2.3845 eval_top1: 50.0400 eval_top5: 81.4200
+2023-04-28 11:06:02 ===> Current epoch time consumption: 0.81 minutes!
+2023-04-28 11:06:48 ===> Current epoch time consumption: 0.77 minutes!
+2023-04-28 11:07:34 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 11:08:20 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 11:09:05 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 11:09:51 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 11:10:37 ===> Current epoch time consumption: 0.76 minutes!
+2023-04-28 11:11:23 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 11:12:10 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 11:12:57 ===> Current epoch time consumption: 0.78 minutes!
+2023-04-28 11:12:59 ===> Current epoch time consumption: 7.77 minutes!
+2023-04-28 11:12:59 ===> Estimated remaining training time: 0.39 hours!

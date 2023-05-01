@@ -1,0 +1,197 @@
+2023-04-27 04:20:59 ===> --------------------------------------This is all argsurations----------------------------------
+2023-04-27 04:20:59 ===> user=Dylon
+2023-04-27 04:20:59 ===> experiment=FedAvg
+2023-04-27 04:20:59 ===> date=2023-04-27-04:20:58
+2023-04-27 04:20:59 ===> description=non-iid
+2023-04-27 04:20:59 ===> root=path to training set
+2023-04-27 04:20:59 ===> dataset=cifar100
+2023-04-27 04:20:59 ===> data_dist=noniid
+2023-04-27 04:20:59 ===> num_workers=4
+2023-04-27 04:20:59 ===> lr=0.01
+2023-04-27 04:20:59 ===> K=10
+2023-04-27 04:20:59 ===> wd=1e-05
+2023-04-27 04:20:59 ===> epochs=50
+2023-04-27 04:20:59 ===> local_epochs=10
+2023-04-27 04:20:59 ===> seed=0
+2023-04-27 04:20:59 ===> batch_size=128
+2023-04-27 04:20:59 ===> save_freq=50
+2023-04-27 04:20:59 ===> beta=0.5
+2023-04-27 04:20:59 ===> ----------------------------------------This is a halvingline----------------------------------
+2023-04-27 04:20:59 ===> non-iid
+2023-04-27 04:21:01 ===> Loaded backend module://matplotlib_inline.backend_inline version unknown.
+2023-04-27 04:21:01 ===> findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0.
+2023-04-27 04:21:01 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerif.ttf', name='DejaVu Serif', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2023-04-27 04:21:01 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/STIXGeneralItalic.ttf', name='STIXGeneral', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2023-04-27 04:21:01 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/STIXNonUniBol.ttf', name='STIXNonUnicode', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2023-04-27 04:21:01 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/STIXSizThreeSymBol.ttf', name='STIXSizeThreeSym', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2023-04-27 04:21:01 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/STIXSizTwoSymReg.ttf', name='STIXSizeTwoSym', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2023-04-27 04:21:01 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerifDisplay.ttf', name='DejaVu Serif Display', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2023-04-27 04:21:01 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/STIXNonUniIta.ttf', name='STIXNonUnicode', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2023-04-27 04:21:01 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansMono-Oblique.ttf', name='DejaVu Sans Mono', style='oblique', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2023-04-27 04:21:01 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/cmex10.ttf', name='cmex10', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2023-04-27 04:21:01 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/STIXSizFourSymBol.ttf', name='STIXSizeFourSym', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2023-04-27 04:21:01 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/STIXSizOneSymReg.ttf', name='STIXSizeOneSym', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2023-04-27 04:21:01 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerif-BoldItalic.ttf', name='DejaVu Serif', style='italic', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
+2023-04-27 04:21:01 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/STIXNonUniBolIta.ttf', name='STIXNonUnicode', style='italic', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
+2023-04-27 04:21:01 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/cmsy10.ttf', name='cmsy10', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2023-04-27 04:21:01 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansDisplay.ttf', name='DejaVu Sans Display', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2023-04-27 04:21:01 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/STIXGeneral.ttf', name='STIXGeneral', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2023-04-27 04:21:01 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/STIXSizOneSymBol.ttf', name='STIXSizeOneSym', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2023-04-27 04:21:01 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerif-Bold.ttf', name='DejaVu Serif', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2023-04-27 04:21:01 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/STIXNonUni.ttf', name='STIXNonUnicode', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2023-04-27 04:21:01 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-BoldOblique.ttf', name='DejaVu Sans', style='oblique', variant='normal', weight=700, stretch='normal', size='scalable')) = 1.335
+2023-04-27 04:21:01 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/cmtt10.ttf', name='cmtt10', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2023-04-27 04:21:01 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/STIXSizThreeSymReg.ttf', name='STIXSizeThreeSym', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2023-04-27 04:21:01 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/cmss10.ttf', name='cmss10', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2023-04-27 04:21:01 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansMono-BoldOblique.ttf', name='DejaVu Sans Mono', style='oblique', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
+2023-04-27 04:21:01 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/STIXSizFiveSymReg.ttf', name='STIXSizeFiveSym', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2023-04-27 04:21:01 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/STIXSizTwoSymBol.ttf', name='STIXSizeTwoSym', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2023-04-27 04:21:01 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/cmr10.ttf', name='cmr10', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2023-04-27 04:21:01 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/STIXGeneralBolIta.ttf', name='STIXGeneral', style='italic', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
+2023-04-27 04:21:01 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf', name='DejaVu Sans', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 0.33499999999999996
+2023-04-27 04:21:01 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/cmmi10.ttf', name='cmmi10', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2023-04-27 04:21:01 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerif-Italic.ttf', name='DejaVu Serif', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2023-04-27 04:21:01 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Oblique.ttf', name='DejaVu Sans', style='oblique', variant='normal', weight=400, stretch='normal', size='scalable')) = 1.05
+2023-04-27 04:21:01 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/STIXSizFourSymReg.ttf', name='STIXSizeFourSym', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2023-04-27 04:21:01 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansMono-Bold.ttf', name='DejaVu Sans Mono', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2023-04-27 04:21:01 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansMono.ttf', name='DejaVu Sans Mono', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2023-04-27 04:21:01 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/STIXGeneralBol.ttf', name='STIXGeneral', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2023-04-27 04:21:01 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf', name='DejaVu Sans', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 0.05
+2023-04-27 04:21:01 ===> findfont: score(FontEntry(fname='/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/cmb10.ttf', name='cmb10', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2023-04-27 04:21:01 ===> findfont: score(FontEntry(fname='/usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf', name='DejaVu Sans Mono', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2023-04-27 04:21:01 ===> findfont: score(FontEntry(fname='/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf', name='DejaVu Sans', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 0.05
+2023-04-27 04:21:01 ===> findfont: score(FontEntry(fname='/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf', name='DejaVu Sans', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 0.33499999999999996
+2023-04-27 04:21:01 ===> findfont: score(FontEntry(fname='/usr/share/fonts/truetype/dejavu/DejaVuSerif-Bold.ttf', name='DejaVu Serif', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2023-04-27 04:21:01 ===> findfont: score(FontEntry(fname='/usr/share/fonts/truetype/dejavu/DejaVuSansMono-Bold.ttf', name='DejaVu Sans Mono', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2023-04-27 04:21:01 ===> findfont: score(FontEntry(fname='/usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf', name='DejaVu Serif', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2023-04-27 04:21:01 ===> findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('/usr/local/lib/python3.9/dist-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf') with score of 0.050000.
+2023-04-27 04:21:02 ===> Samples for train of 0= 5034
+2023-04-27 04:21:02 ===> Samples for train of 1= 5025
+2023-04-27 04:21:02 ===> Samples for train of 2= 4969
+2023-04-27 04:21:02 ===> Samples for train of 3= 4942
+2023-04-27 04:21:02 ===> Samples for train of 4= 4965
+2023-04-27 04:21:02 ===> Samples for train of 5= 4969
+2023-04-27 04:21:02 ===> Samples for train of 6= 4989
+2023-04-27 04:21:02 ===> Samples for train of 7= 4995
+2023-04-27 04:21:02 ===> Samples for train of 8= 5025
+2023-04-27 04:21:02 ===> Samples for train of 9= 5087
+2023-04-27 04:21:55 ===> Epoch: 0_Iter:0 loss: 2.5654 top1: 24.42 top5: 52.11
+2023-04-27 04:21:55 ===> Epoch: 0_Iter:1 loss: 2.6057 top1: 24.46 top5: 52.15
+2023-04-27 04:21:55 ===> Epoch: 0_Iter:2 loss: 2.7752 top1: 24.48 top5: 52.17
+2023-04-27 04:21:55 ===> Epoch: 0_Iter:3 loss: 2.3694 top1: 24.53 top5: 52.21
+2023-04-27 04:21:55 ===> Epoch: 0_Iter:4 loss: 2.7852 top1: 24.56 top5: 52.24
+2023-04-27 04:21:55 ===> Epoch: 0_Iter:5 loss: 2.4471 top1: 24.60 top5: 52.28
+2023-04-27 04:21:55 ===> Epoch: 0_Iter:6 loss: 2.6707 top1: 24.63 top5: 52.31
+2023-04-27 04:21:56 ===> Epoch: 0_Iter:7 loss: 2.5696 top1: 24.65 top5: 52.35
+2023-04-27 04:21:56 ===> Epoch: 0_Iter:8 loss: 2.5745 top1: 24.67 top5: 52.37
+2023-04-27 04:21:56 ===> Epoch: 0_Iter:9 loss: 2.6618 top1: 24.69 top5: 52.39
+2023-04-27 04:21:56 ===> Epoch: 0_Iter:10 loss: 2.6268 top1: 24.72 top5: 52.42
+2023-04-27 04:21:56 ===> Epoch: 0_Iter:11 loss: 2.5214 top1: 24.77 top5: 52.46
+2023-04-27 04:21:56 ===> Epoch: 0_Iter:12 loss: 2.6090 top1: 24.79 top5: 52.48
+2023-04-27 04:21:56 ===> Epoch: 0_Iter:13 loss: 2.5526 top1: 24.81 top5: 52.51
+2023-04-27 04:21:56 ===> Epoch: 0_Iter:14 loss: 2.5070 top1: 24.84 top5: 52.56
+2023-04-27 04:21:57 ===> Epoch: 0_Iter:15 loss: 2.5110 top1: 24.87 top5: 52.59
+2023-04-27 04:21:57 ===> Epoch: 0_Iter:16 loss: 2.5090 top1: 24.90 top5: 52.62
+2023-04-27 04:21:57 ===> Epoch: 0_Iter:17 loss: 2.5865 top1: 24.92 top5: 52.66
+2023-04-27 04:21:57 ===> Epoch: 0_Iter:18 loss: 2.5108 top1: 24.96 top5: 52.71
+2023-04-27 04:21:57 ===> Epoch: 0_Iter:19 loss: 2.6528 top1: 24.97 top5: 52.74
+2023-04-27 04:21:57 ===> Epoch: 0_Iter:20 loss: 2.3209 top1: 25.01 top5: 52.80
+2023-04-27 04:21:57 ===> Epoch: 0_Iter:21 loss: 2.6835 top1: 25.03 top5: 52.83
+2023-04-27 04:21:57 ===> Epoch: 0_Iter:22 loss: 2.8556 top1: 25.03 top5: 52.84
+2023-04-27 04:21:58 ===> Epoch: 0_Iter:23 loss: 2.4812 top1: 25.07 top5: 52.88
+2023-04-27 04:21:58 ===> Epoch: 0_Iter:24 loss: 2.7940 top1: 25.09 top5: 52.89
+2023-04-27 04:21:58 ===> Epoch: 0_Iter:25 loss: 2.5653 top1: 25.12 top5: 52.93
+2023-04-27 04:21:58 ===> Epoch: 0_Iter:26 loss: 2.6311 top1: 25.16 top5: 52.96
+2023-04-27 04:21:58 ===> Epoch: 0_Iter:27 loss: 2.7839 top1: 25.17 top5: 52.99
+2023-04-27 04:21:58 ===> Epoch: 0_Iter:28 loss: 2.6591 top1: 25.20 top5: 53.01
+2023-04-27 04:21:58 ===> Epoch: 0_Iter:29 loss: 2.5617 top1: 25.24 top5: 53.04
+2023-04-27 04:21:58 ===> Epoch: 0_Iter:30 loss: 2.5964 top1: 25.25 top5: 53.07
+2023-04-27 04:21:59 ===> Epoch: 0_Iter:31 loss: 2.5269 top1: 25.28 top5: 53.11
+2023-04-27 04:21:59 ===> Epoch: 0_Iter:32 loss: 2.6314 top1: 25.30 top5: 53.14
+2023-04-27 04:21:59 ===> Epoch: 0_Iter:33 loss: 2.4751 top1: 25.34 top5: 53.18
+2023-04-27 04:21:59 ===> Epoch: 0_Iter:34 loss: 2.7136 top1: 25.35 top5: 53.20
+2023-04-27 04:21:59 ===> Epoch: 0_Iter:35 loss: 2.5272 top1: 25.38 top5: 53.24
+2023-04-27 04:21:59 ===> Epoch: 0_Iter:36 loss: 2.5917 top1: 25.40 top5: 53.26
+2023-04-27 04:21:59 ===> Epoch: 0_Iter:37 loss: 2.3455 top1: 25.44 top5: 53.32
+2023-04-27 04:22:00 ===> Epoch: 0_Iter:38 loss: 2.4291 top1: 25.48 top5: 53.36
+2023-04-27 04:22:02 ===> Epoch: 0 eval_loss: 5.1336 eval_top1: 10.1200 eval_top5: 24.8000
+2023-04-27 04:22:02 ===> Current epoch time consumption: 0.96 minutes!
+2023-04-27 04:22:50 ===> Epoch: 0_Iter:0 loss: 2.4856 top1: 26.26 top5: 54.97
+2023-04-27 04:22:50 ===> Epoch: 0_Iter:1 loss: 2.5459 top1: 26.29 top5: 55.00
+2023-04-27 04:22:50 ===> Epoch: 0_Iter:2 loss: 2.7046 top1: 26.30 top5: 55.03
+2023-04-27 04:22:51 ===> Epoch: 0_Iter:3 loss: 2.6799 top1: 26.34 top5: 55.04
+2023-04-27 04:22:51 ===> Epoch: 0_Iter:4 loss: 2.4383 top1: 26.38 top5: 55.08
+2023-04-27 04:22:51 ===> Epoch: 0_Iter:5 loss: 2.3787 top1: 26.42 top5: 55.13
+2023-04-27 04:22:51 ===> Epoch: 0_Iter:6 loss: 2.4675 top1: 26.46 top5: 55.16
+2023-04-27 04:22:51 ===> Epoch: 0_Iter:7 loss: 2.7672 top1: 26.46 top5: 55.18
+2023-04-27 04:22:51 ===> Epoch: 0_Iter:8 loss: 2.6990 top1: 26.48 top5: 55.21
+2023-04-27 04:22:51 ===> Epoch: 0_Iter:9 loss: 2.4666 top1: 26.51 top5: 55.25
+2023-04-27 04:22:51 ===> Epoch: 0_Iter:10 loss: 2.6481 top1: 26.53 top5: 55.29
+2023-04-27 04:22:52 ===> Epoch: 0_Iter:11 loss: 2.6034 top1: 26.54 top5: 55.32
+2023-04-27 04:22:52 ===> Epoch: 0_Iter:12 loss: 2.4943 top1: 26.58 top5: 55.34
+2023-04-27 04:22:52 ===> Epoch: 0_Iter:13 loss: 2.4590 top1: 26.61 top5: 55.37
+2023-04-27 04:22:52 ===> Epoch: 0_Iter:14 loss: 2.7716 top1: 26.63 top5: 55.39
+2023-04-27 04:22:52 ===> Epoch: 0_Iter:15 loss: 2.8325 top1: 26.65 top5: 55.38
+2023-04-27 04:22:52 ===> Epoch: 0_Iter:16 loss: 2.4888 top1: 26.68 top5: 55.41
+2023-04-27 04:22:52 ===> Epoch: 0_Iter:17 loss: 2.5162 top1: 26.71 top5: 55.45
+2023-04-27 04:22:53 ===> Epoch: 0_Iter:18 loss: 2.4758 top1: 26.74 top5: 55.48
+2023-04-27 04:22:53 ===> Epoch: 0_Iter:19 loss: 2.3804 top1: 26.77 top5: 55.53
+2023-04-27 04:22:53 ===> Epoch: 0_Iter:20 loss: 2.3485 top1: 26.80 top5: 55.57
+2023-04-27 04:22:53 ===> Epoch: 0_Iter:21 loss: 2.5533 top1: 26.82 top5: 55.60
+2023-04-27 04:22:53 ===> Epoch: 0_Iter:22 loss: 2.4074 top1: 26.85 top5: 55.64
+2023-04-27 04:22:53 ===> Epoch: 0_Iter:23 loss: 2.7100 top1: 26.87 top5: 55.66
+2023-04-27 04:22:53 ===> Epoch: 0_Iter:24 loss: 2.3657 top1: 26.90 top5: 55.69
+2023-04-27 04:22:53 ===> Epoch: 0_Iter:25 loss: 2.5102 top1: 26.93 top5: 55.72
+2023-04-27 04:22:54 ===> Epoch: 0_Iter:26 loss: 2.6312 top1: 26.95 top5: 55.73
+2023-04-27 04:22:54 ===> Epoch: 0_Iter:27 loss: 2.6474 top1: 26.97 top5: 55.75
+2023-04-27 04:22:54 ===> Epoch: 0_Iter:28 loss: 2.3265 top1: 27.00 top5: 55.79
+2023-04-27 04:22:54 ===> Epoch: 0_Iter:29 loss: 2.5008 top1: 27.03 top5: 55.82
+2023-04-27 04:22:54 ===> Epoch: 0_Iter:30 loss: 2.6983 top1: 27.04 top5: 55.83
+2023-04-27 04:22:54 ===> Epoch: 0_Iter:31 loss: 2.5710 top1: 27.07 top5: 55.85
+2023-04-27 04:22:54 ===> Epoch: 0_Iter:32 loss: 2.4466 top1: 27.11 top5: 55.89
+2023-04-27 04:22:54 ===> Epoch: 0_Iter:33 loss: 2.4011 top1: 27.15 top5: 55.92
+2023-04-27 04:22:55 ===> Epoch: 0_Iter:34 loss: 2.4106 top1: 27.18 top5: 55.96
+2023-04-27 04:22:55 ===> Epoch: 0_Iter:35 loss: 2.5250 top1: 27.20 top5: 55.99
+2023-04-27 04:22:55 ===> Epoch: 0_Iter:36 loss: 2.4518 top1: 27.24 top5: 56.03
+2023-04-27 04:22:55 ===> Epoch: 0_Iter:37 loss: 2.4352 top1: 27.27 top5: 56.06
+2023-04-27 04:22:55 ===> Epoch: 0_Iter:38 loss: 2.7881 top1: 27.28 top5: 56.06
+2023-04-27 04:22:55 ===> Current epoch time consumption: 0.88 minutes!
+2023-04-27 04:23:42 ===> Epoch: 0_Iter:0 loss: 2.6501 top1: 25.80 top5: 51.05
+2023-04-27 04:23:42 ===> Epoch: 0_Iter:1 loss: 2.7118 top1: 25.83 top5: 51.08
+2023-04-27 04:23:42 ===> Epoch: 0_Iter:2 loss: 2.7400 top1: 25.87 top5: 51.11
+2023-04-27 04:23:42 ===> Epoch: 0_Iter:3 loss: 2.6379 top1: 25.89 top5: 51.16
+2023-04-27 04:23:42 ===> Epoch: 0_Iter:4 loss: 2.6013 top1: 25.91 top5: 51.19
+2023-04-27 04:23:42 ===> Epoch: 0_Iter:5 loss: 2.8182 top1: 25.92 top5: 51.22
+2023-04-27 04:23:43 ===> Epoch: 0_Iter:6 loss: 2.9826 top1: 25.92 top5: 51.22
+2023-04-27 04:23:43 ===> Epoch: 0_Iter:7 loss: 2.7965 top1: 25.94 top5: 51.24
+2023-04-27 04:23:43 ===> Epoch: 0_Iter:8 loss: 2.7437 top1: 25.96 top5: 51.27
+2023-04-27 04:23:43 ===> Epoch: 0_Iter:9 loss: 2.8412 top1: 25.97 top5: 51.28
+2023-04-27 04:23:43 ===> Epoch: 0_Iter:10 loss: 2.8623 top1: 25.97 top5: 51.28
+2023-04-27 04:23:43 ===> Epoch: 0_Iter:11 loss: 2.6865 top1: 25.98 top5: 51.32
+2023-04-27 04:23:43 ===> Epoch: 0_Iter:12 loss: 2.8229 top1: 25.98 top5: 51.32
+2023-04-27 04:23:43 ===> Epoch: 0_Iter:13 loss: 2.9128 top1: 26.01 top5: 51.33
+2023-04-27 04:23:44 ===> Epoch: 0_Iter:14 loss: 2.8747 top1: 26.02 top5: 51.36
+2023-04-27 04:23:44 ===> Epoch: 0_Iter:15 loss: 2.5324 top1: 26.05 top5: 51.41
+2023-04-27 04:23:44 ===> Epoch: 0_Iter:16 loss: 2.8538 top1: 26.05 top5: 51.44
+2023-04-27 04:23:44 ===> Epoch: 0_Iter:17 loss: 2.7542 top1: 26.07 top5: 51.47
+2023-04-27 04:23:44 ===> Epoch: 0_Iter:18 loss: 2.7387 top1: 26.08 top5: 51.51
+2023-04-27 04:23:44 ===> Epoch: 0_Iter:19 loss: 2.9066 top1: 26.09 top5: 51.52
+2023-04-27 04:23:44 ===> Epoch: 0_Iter:20 loss: 2.6165 top1: 26.10 top5: 51.54
+2023-04-27 04:23:44 ===> Epoch: 0_Iter:21 loss: 2.4182 top1: 26.14 top5: 51.59
+2023-04-27 04:23:45 ===> Epoch: 0_Iter:22 loss: 2.7483 top1: 26.16 top5: 51.61
+2023-04-27 04:23:45 ===> Epoch: 0_Iter:23 loss: 2.9246 top1: 26.17 top5: 51.64
+2023-04-27 04:23:45 ===> Epoch: 0_Iter:24 loss: 2.9555 top1: 26.18 top5: 51.65
+2023-04-27 04:23:45 ===> Epoch: 0_Iter:25 loss: 2.6898 top1: 26.19 top5: 51.66
+2023-04-27 04:23:45 ===> Epoch: 0_Iter:26 loss: 2.7836 top1: 26.22 top5: 51.68
+2023-04-27 04:23:45 ===> Epoch: 0_Iter:27 loss: 2.6123 top1: 26.23 top5: 51.70
+2023-04-27 04:23:45 ===> Epoch: 0_Iter:28 loss: 2.7697 top1: 26.25 top5: 51.73
+2023-04-27 04:23:45 ===> Epoch: 0_Iter:29 loss: 2.6892 top1: 26.27 top5: 51.76
+2023-04-27 04:23:46 ===> Epoch: 0_Iter:30 loss: 2.5313 top1: 26.30 top5: 51.80
+2023-04-27 04:23:46 ===> Epoch: 0_Iter:31 loss: 2.5547 top1: 26.33 top5: 51.84
+2023-04-27 04:23:46 ===> Epoch: 0_Iter:32 loss: 2.9105 top1: 26.33 top5: 51.85
+2023-04-27 04:23:46 ===> Epoch: 0_Iter:33 loss: 2.7122 top1: 26.35 top5: 51.87
+2023-04-27 04:23:46 ===> Epoch: 0_Iter:34 loss: 2.6914 top1: 26.37 top5: 51.91
+2023-04-27 04:23:46 ===> Epoch: 0_Iter:35 loss: 2.5134 top1: 26.41 top5: 51.94
+2023-04-27 04:23:46 ===> Epoch: 0_Iter:36 loss: 2.6869 top1: 26.43 top5: 51.96
+2023-04-27 04:23:47 ===> Epoch: 0_Iter:37 loss: 2.6538 top1: 26.46 top5: 51.98
+2023-04-27 04:23:47 ===> Current epoch time consumption: 0.86 minutes!
