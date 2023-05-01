@@ -65,6 +65,7 @@ class NPN(torch.nn.Module):
         dim = self.model.linear.weight.numel()
         self.net = torch.nn.Sequential(
             NPNLinearLite(10, 10, True),
+            #NPNLinearLite(4, 10, True),
             # NPNSigmoid(),
             NPNTanh(),
             NPNLinearLite(10, dim, True)
